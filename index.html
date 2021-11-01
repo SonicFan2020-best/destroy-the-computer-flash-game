@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 
 <h1>destroy the computer beta</h1>
-<script>
-    window.RufflePlayer = window.RufflePlayer || {};
-    window.addEventListener("load", (event) => {
-        const ruffle = window.RufflePlayer.newest();
-        const player = ruffle.createPlayer();
-        const container = document.getElementById("container");
-        container.appendChild(player);
-        player.load("metelev.swf");
-    });
-</script>
+<script type="text/javascript" src="swfobject.js"></script>
 <script src="ruffle.js"></script>
+
+
+<script type="text/javascript">
+		swfobject.registerObject("myId", "9.0.0", "metelev.swf");
+		</script>
 
 <a href="sonicfan2020-best.github.io/destroy-the-computer-flash-game/english.html/">English edition (not working)</a>
 </body>
